@@ -10,8 +10,8 @@ with open('Insurance_linear_model.pkl', 'rb') as f:
 input_features = ['age', 'gender', 'bmi', 'bloodpressure', 'diabetic', 'children', 'smoker', 'region']
 
 # Create a Streamlit app
-st.title("Insurance Claim Prediction")
-st.header("Enter your details to predict your insurance claim amount")
+st.header("Insurance Premium Prediction")
+st.subheader("Enter your details to predict your insurance claim amount")
 
 # Input fields for user data
 age = st.number_input("Age", min_value=0, max_value=120, value=25)
